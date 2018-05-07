@@ -1,7 +1,7 @@
 ﻿<Window x:Class="FeatureGui.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LabelControlAdvancedSample" Height="180" Width="250">
+        Title="LabelControlAdvancedSample" Height="200" Width="250">
     <StackPanel Margin="10">
         <Label Target="{Binding ElementName=NameTag}">
             <StackPanel Orientation="Horizontal">
@@ -17,5 +17,12 @@
             </StackPanel>
         </Label>
         <TextBox Name="MailTag"/>
+        <Label Target="{Binding ElementName=NameTag}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
+                <AccessText Text="_Some"/>
+            </StackPanel>
+        </Label>
+        <TextBox Name="ThirdTag"/>
     </StackPanel>
 </Window>
