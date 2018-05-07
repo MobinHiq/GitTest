@@ -1,28 +1,33 @@
 ﻿<Window x:Class="FeatureGui.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LabelControlAdvancedSample" Height="200" Width="250">
-    <StackPanel Margin="10">
-        <Label Target="{Binding ElementName=NameTag}">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
-                <AccessText Text="_Name"/>
-            </StackPanel>
-        </Label>
-        <TextBox Name="NameTag"/>
-        <Label Target="{Binding ElementName=MailTag}">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
-                <AccessText Text="_Mail"/>
-            </StackPanel>
-        </Label>
-        <TextBox Name="MailTag"/>
-        <Label Target="{Binding ElementName=NameTag}">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
-                <AccessText Text="_Some"/>
-            </StackPanel>
-        </Label>
-        <TextBox Name="ThirdTag"/>
-    </StackPanel>
+        Title="LabelControlAdvancedSample" Height="240" Width="250">
+    <Grid >
+        <StackPanel Margin="10,10,10.2,59.4">
+            <Label Target="{Binding ElementName=NameTag}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
+                    <AccessText Text="_Name"/>
+                </StackPanel>
+            </Label>
+            <TextBox Name="NameTag"/>
+            <Label Target="{Binding ElementName=MailTag}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
+                    <AccessText Text="_Mail"/>
+                </StackPanel>
+            </Label>
+            <TextBox Name="MailTag"/>
+            <Label Target="{Binding ElementName=NameTag}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png"/>
+                    <AccessText Text="_Some"/>
+                </StackPanel>
+            </Label>
+            <TextBox Name="ThirdTag"/>
+        </StackPanel>
+        <StackPanel Margin="0,151,0.2,0.4">
+            <Button Width="100" HorizontalAlignment="Center" Content="Click" Margin="20"/>
+        </StackPanel>
+    </Grid>
 </Window>
